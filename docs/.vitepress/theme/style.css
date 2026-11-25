@@ -1,0 +1,84 @@
+/*
+ * The site wears the app's own look (preview.html): graphite surfaces, ivory text,
+ * a sapphire accent, and Manrope.
+ */
+:root {
+  --as-bg: #f4f3ef;
+  --as-panel: #fbfaf7;
+  --as-line: #e2e0da;
+  --as-line-strong: #d0cdc5;
+  --as-text: #1b1c20;
+  --as-action: #3c5a8a;
+
+  --vp-font-family-base: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  --vp-c-bg: var(--as-bg);
+  --vp-c-bg-alt: #eceae4;
+  --vp-c-bg-soft: #eceae4;
+  --vp-c-divider: var(--as-line);
+  --vp-c-gutter: var(--as-line);
+  --vp-c-text-1: var(--as-text);
+  --vp-c-text-2: #55575e;
+  --vp-c-text-3: #64666d;
+  --vp-c-brand-1: var(--as-action);
+  --vp-c-brand-2: #34507d;
+  --vp-c-brand-3: var(--as-action);
+  --vp-c-brand-soft: rgba(60, 90, 138, .12);
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-active-text: #ffffff;
+  --vp-home-hero-name-color: var(--as-text);
+}
+
+.dark {
+  --as-bg: #131417;
+  --as-panel: #18191d;
+  --as-line: #26282d;
+  --as-line-strong: #34373e;
+  --as-text: #ecebe6;
+  --as-action: #a9bcd9;
+
+  --vp-c-bg: var(--as-bg);
+  --vp-c-bg-alt: #18191d;
+  --vp-c-bg-soft: #1f2126;
+  --vp-c-bg-elv: #1f2126;
+  --vp-c-text-2: #a4a6ad;
+  --vp-c-text-3: #8a8d95;
+  --vp-c-brand-1: var(--as-action);
+  --vp-c-brand-2: #bccbe3;
+  --vp-c-brand-3: #a9bcd9;
+  --vp-c-brand-soft: rgba(169, 188, 217, .14);
+  --vp-button-brand-text: #10151e;
+  --vp-button-brand-hover-text: #10151e;
+  --vp-button-brand-active-text: #10151e;
+}
+
+/* Hero: one big, tight headline; the name sits quietly above it. */
+.VPHero .name {
+  font-size: 20px !important;
+  line-height: 28px !important;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.VPHero .text {
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.04 !important;
+  max-width: 14ch;
+}
+@media (min-width: 960px) {
+  .VPHero .text { font-size: 64px !important; }
+}
+.VPHero .tagline {
+  max-width: 46ch;
+  color: var(--vp-c-text-2);
+}
+
+/* Feature cards: flat and quiet, so the product shot carries the page. */
+.VPFeature {
+  background: transparent !important;
+  border: 1px solid var(--vp-c-divider) !important;
+  border-radius: 12px !important;
+}
+.VPFeature .title { font-weight: 700; letter-spacing: -0.01em; }
+
+.VPNavBarTitle .title { font-weight: 800; letter-spacing: -0.01em; }

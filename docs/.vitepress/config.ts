@@ -15,11 +15,18 @@ export default defineConfig({
   lastUpdated: true,
 
   head: [
-    ['link', { rel: 'icon', href: '/allnstack-releases/logo.svg', type: 'image/svg+xml' }],
-    ['meta', { name: 'theme-color', content: '#0f172a' }],
+    ['link', { rel: 'icon', href: '/allnstack-releases/favicon.ico', sizes: '48x48' }],
+    ['link', { rel: 'icon', href: '/allnstack-releases/favicon.svg', type: 'image/svg+xml' }],
+    ['link', { rel: 'apple-touch-icon', href: '/allnstack-releases/apple-touch-icon.png' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap' }],
+    ['meta', { name: 'theme-color', content: '#131417' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'Allnstack | The agency chat workspace' }],
     ['meta', { property: 'og:description', content: DESCRIPTION }],
+    ['meta', { property: 'og:image', content: 'https://oserusapp-cyber.github.io/allnstack-releases/og.png' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
   ],
 
   themeConfig: {

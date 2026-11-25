@@ -7,9 +7,6 @@ hero:
   name: Allnstack
   text: Every model’s chats. One inbox. Your whole team.
   tagline: A desktop workspace for agencies that manage creators’ chats, with roles, shifts, a media vault and AI-assisted replies.
-  image:
-    src: /logo.svg
-    alt: Allnstack
   actions:
     - theme: brand
       text: Download for Windows
